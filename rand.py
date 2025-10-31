@@ -12,3 +12,5 @@ for i in range(count):
 print(f"sum is{sum}")
 avg = sum/count
 print(f"avg: {avg}")
+
+#random floating point
