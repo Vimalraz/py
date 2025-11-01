@@ -27,13 +27,11 @@ import random
 # print(f"avg: {avg}")
 
 #heads or tails
-seed = int(random.uniform(0,2))
+seed = random.randint(0,1)
 if seed == 0:
     print("\nHeads\n")
-elif seed == 1:
-    print("\nTails\n")
 else:
-    print("Error! Try again.")
+    print("\nTails\n")
 # #testing for uniform inclusivity
 # while True:
 #     rand = int(random.uniform(0,2))
