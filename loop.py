@@ -8,3 +8,11 @@ for data in dummy_data:
         max = data
     
 print(max)
+
+
+sum = 0
+
+for i in range(1,101):
+    sum += i
+
+print(sum)
