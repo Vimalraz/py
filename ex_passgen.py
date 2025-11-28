@@ -14,21 +14,6 @@ hard_password_list = []
 #Eazy Level - Order not randomised:
 #e.g. 4 letter, 2 symbol, 2 number = JduE&!91
 for i in range(1,nr_letters+1):
-    hard_password_list.append(random.choice(letters))
-
-for i in range(1,nr_symbols+1):
-    hard_password_list.append(random.choice(symbols)) 
-
-for i in range(1,nr_numbers+1):
-    hard_password_list.append(random.choice(numbers)) 
-
-password = ''.join(password_list)
-print(password)
-
-#Hard Level - Order of characters randomised:
-#e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
-
-for i in range(1,nr_letters+1):
     password_list.append(random.choice(letters))
 
 for i in range(1,nr_symbols+1):
@@ -37,5 +22,14 @@ for i in range(1,nr_symbols+1):
 for i in range(1,nr_numbers+1):
     password_list.append(random.choice(numbers)) 
 
-hard_password = ''.join(password_list)
-print(password)
+password = ''.join(password_list)
+print(f"Easy password: {password}")
+
+#Hard Level - Order of characters randomised:
+#e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
+
+hard_password_list = password_list
+random.shuffle(hard_password_list)
+
+hard_password = ''.join(hard_password_list)
+print(f"Hard password: {hard_password}")
